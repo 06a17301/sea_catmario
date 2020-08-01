@@ -1,0 +1,487 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 12:37:19 2020
+# Process ID: 8956
+# Current directory: E:/a_summer_xilinx/catmario_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10112 E:\a_summer_xilinx\catmario_1\catmario_1.xpr
+# Log file: E:/a_summer_xilinx/catmario_1/vivado.log
+# Journal file: E:/a_summer_xilinx/catmario_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/a_summer_xilinx/catmario_1/catmario_1.xpr
+update_compile_order -fileset sources_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name hidden_dist_mem_gen_0 -dir e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {1024} CONFIG.data_width {8} CONFIG.Component_Name {hidden_dist_mem_gen_0} CONFIG.memory_type {rom} CONFIG.coefficient_file {E:/a_summer_xilinx/catmario_1/baw_hidden_Picture_R_Rom.coe}] [get_ips hidden_dist_mem_gen_0]
+generate_target {instantiation_template} [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/hidden_dist_mem_gen_0/hidden_dist_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/hidden_dist_mem_gen_0/hidden_dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all hidden_dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/hidden_dist_mem_gen_0/hidden_dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/hidden_dist_mem_gen_0/hidden_dist_mem_gen_0.xci]
+launch_runs -jobs 4 hidden_dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/hidden_dist_mem_gen_0/hidden_dist_mem_gen_0.xci] -directory E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/sim_scripts -ip_user_files_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files -ipstatic_source_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/modelsim} {questa=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/questa} {riviera=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/riviera} {activehdl=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name win_dist_mem_gen_0 -dir e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {8192} CONFIG.data_width {8} CONFIG.Component_Name {win_dist_mem_gen_0} CONFIG.memory_type {rom} CONFIG.coefficient_file {E:/a_summer_xilinx/catmario_1/baw_win_Picture_R_Rom.coe}] [get_ips win_dist_mem_gen_0]
+generate_target {instantiation_template} [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/win_dist_mem_gen_0/win_dist_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/win_dist_mem_gen_0/win_dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all win_dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/win_dist_mem_gen_0/win_dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/win_dist_mem_gen_0/win_dist_mem_gen_0.xci]
+launch_runs -jobs 4 win_dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/win_dist_mem_gen_0/win_dist_mem_gen_0.xci] -directory E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/sim_scripts -ip_user_files_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files -ipstatic_source_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/modelsim} {questa=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/questa} {riviera=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/riviera} {activehdl=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name fail_dist_mem_gen_0 -dir e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {8192} CONFIG.data_width {8} CONFIG.Component_Name {fail_dist_mem_gen_0} CONFIG.memory_type {rom} CONFIG.coefficient_file {E:/a_summer_xilinx/catmario_1/baw_fail_Picture_R_Rom.coe}] [get_ips fail_dist_mem_gen_0]
+generate_target {instantiation_template} [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/fail_dist_mem_gen_0/fail_dist_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/fail_dist_mem_gen_0/fail_dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all fail_dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/fail_dist_mem_gen_0/fail_dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/fail_dist_mem_gen_0/fail_dist_mem_gen_0.xci]
+launch_runs -jobs 4 fail_dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/fail_dist_mem_gen_0/fail_dist_mem_gen_0.xci] -directory E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/sim_scripts -ip_user_files_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files -ipstatic_source_dir E:/a_summer_xilinx/catmario_1/catmario_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/modelsim} {questa=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/questa} {riviera=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/riviera} {activehdl=E:/a_summer_xilinx/catmario_1/catmario_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -before E:/a_summer_xilinx/catmario_1/catmario_1.srcs/constrs_1/new/system.xdc E:/a_summer_xilinx/catmario_1/catmario_1.srcs/constrs_1/new/system.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {E:/a_summer_xilinx/catmario_1/catmario_1.runs/impl_1/HDMI_display.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw

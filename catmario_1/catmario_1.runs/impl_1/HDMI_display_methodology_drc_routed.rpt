@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 11:31:26 2020
+| Host         : LAPTOP-SQODOUTU running 64-bit major release  (build 9200)
+| Command      : report_methodology -file HDMI_display_methodology_drc_routed.rpt -pb HDMI_display_methodology_drc_routed.pb -rpx HDMI_display_methodology_drc_routed.rpx
+| Design       : HDMI_display
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 25
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check                      | 8          |
+| SYNTH-12  | Warning  | DSP input not registered                       | 1          |
+| SYNTH-13  | Warning  | combinational multiplier                       | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks | 4          |
+| TIMING-16 | Warning  | Large setup violation                          | 10         |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects    | 1          |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy1 input pin key2move0/mem_xy1/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP key2move0/mem_xy_reg input pin key2move0/mem_xy_reg/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+SYNTH-12#1 Warning
+DSP input not registered  
+DSP instance key2move0/mem_xy_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance key2move0/mem_xy1.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0 and PixelClkIO_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks PixelClkIO_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0 and clk_out1_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and PixelClkIO are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks PixelClkIO]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and clk_out1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.017 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[10]/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.028 ns between video0/win_address_reg[1]/C (clocked by clk_out1_clk_wiz_0_1) and video0/RGB_Data_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.051 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[8]/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.058 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/down_reg/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.091 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[9]/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.169 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[7]/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.195 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[11]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.311 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[5]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.312 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[6]/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.320 ns between key2move0/mem_xy_reg/CLK (clocked by clk_out1_clk_wiz_0) and key2move0/cat_y_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '4' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/a_summer_xilinx/catmario_1/catmario_1.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+

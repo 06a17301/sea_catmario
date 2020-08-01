@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../catmario_1.srcs/sources_1/ip/monsterb_dist_mem_gen_0/sim/monsterb_dist_mem_gen_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

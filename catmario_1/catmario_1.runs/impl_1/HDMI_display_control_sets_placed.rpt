@@ -1,0 +1,90 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 11:30:28 2020
+| Host         : LAPTOP-SQODOUTU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HDMI_display_control_sets_placed.rpt
+| Design       : HDMI_display
+| Device       : xc7s15
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    83 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      9 |            2 |
+|     10 |            5 |
+|     11 |            1 |
+|     12 |            3 |
+|     13 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             136 |           59 |
+| No           | No                    | Yes                    |              85 |           28 |
+| No           | Yes                   | No                     |              42 |           18 |
+| Yes          | No                    | No                     |             112 |           47 |
+| Yes          | No                    | Yes                    |              38 |           18 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                    Enable Signal                    |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++-----------------------+-----------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  clk_10/inst/clk_out1 |                                                     | rgb2dvi/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  clk_10/inst/clk_out1 |                                                     | rgb2dvi/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  clk_10/inst/clk_out1 | key2move0/cat_y0[11]_i_1_n_0                        |                                                                               |                5 |              9 |
+|  clk_10/inst/clk_out1 | key2move0/cat_y[11]_i_1_n_0                         | key2move0/rst                                                                 |                8 |              9 |
+|  clk_10/inst/clk_out1 |                                                     | rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                4 |             10 |
+|  clk_10/inst/clk_out1 | key2move0/cat_x[11]_i_1_n_0                         | key2move0/rst                                                                 |                4 |             10 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/FSM_sequential_game_status_reg[0]_0[0] |                                                                               |                4 |             10 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/E[0]                                   |                                                                               |                3 |             10 |
+|  clk_10/inst/clk_out1 | state0/E[0]                                         |                                                                               |                3 |             10 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/FSM_sequential_game_status_reg[0][0]   |                                                                               |                4 |             11 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/Set_X0_carry__0_n_2                    |                                                                               |                5 |             12 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/Set_Y0_carry__0_n_2                    |                                                                               |                3 |             12 |
+|  clk_10/inst/clk_out1 | Driver_HDMI0/VSync_Cnt0                             |                                                                               |                3 |             12 |
+|  clk_10/inst/clk_out1 | state0/FSM_sequential_game_status_reg[0]_8[0]       |                                                                               |                7 |             13 |
+|  clk_10/inst/clk_out1 | state0/FSM_sequential_game_status_reg[0]_9[0]       |                                                                               |               10 |             13 |
+|  clk_10/inst/clk_out1 | monster0/monster_y[11]_i_1_n_0                      | key2move0/rst                                                                 |                6 |             19 |
+|  clk_10/inst/clk_out1 |                                                     | rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               14 |             32 |
+|  clk_10/inst/clk_out1 |                                                     | key2move0/rst                                                                 |               26 |             79 |
+|  clk_10/inst/clk_out1 |                                                     |                                                                               |               59 |            136 |
++-----------------------+-----------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+
